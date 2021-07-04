@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bulma/css/bulma.min.css";
+import Form from "./Form";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="columns">
+          <div className="column">
+            <section className="hero is-primary">
+              <div className="hero-body">
+                <p className="title">React Forms</p>
+                <p className="subtitle">with React Hook Form</p>
+              </div>
+            </section>
+            <Form />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
